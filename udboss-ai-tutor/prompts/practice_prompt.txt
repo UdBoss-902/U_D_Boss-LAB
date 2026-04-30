@@ -1,0 +1,6 @@
+Generate 3 practice questions on: Explain quadratic equation
+
+Rules:
+- Start from easy to medium
+- Include step-by-step solutions
+- Use school-style questions
