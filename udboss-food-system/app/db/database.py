@@ -46,6 +46,15 @@ def create_tables():
         price INTEGER
     )
     """)
-
+# Feedback table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS feedback (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        crop_id INTEGER,
+        actual_price INTEGER,
+        sold_date TEXT,
+        FOREIGN KEY(crop_id) REFERENCES crops(id)
+    )
+    """)
     conn.commit()
     conn.close()
